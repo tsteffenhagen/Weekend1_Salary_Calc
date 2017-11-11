@@ -27,8 +27,10 @@ function submitForm () {
 
 function removeEmployee() {
     $(this).closest('tr').remove();//removes the row that is clicked on
- 
-    $('h2').replaceWith(`<h2>${(sum -= parseInt($('.sal').val())) / 12} </h2>`);
+    console.log(`${parseInt($(this).closest('td.sal').val())}`);
+    
+
+    $('h2').replaceWith(`<h2>${(sum -= $(this).closest('.sal').val()) / 12} </h2>`);
     //removes salary from removed employee
 }
 
