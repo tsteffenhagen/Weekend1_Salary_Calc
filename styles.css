@@ -1,11 +1,21 @@
-tr {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: left;
+th, td {
+    text-align: center;
+    padding: 5px;
+}
+
+th {    
     background-color: seagreen;
     color: white;
 }
 
 body {
     background-color: grey;
+}
+
+tr.removable:nth-child(even){
+    background-color: white;
+}
+
+tr.removable:nth-child(odd){
+    background-color: rgba(68, 68, 228, 0.842);
 }
