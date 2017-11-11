@@ -7,9 +7,18 @@
     <script src="jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
     <title>Weekend 1 Salary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Weekend 1 Salary Calculator</h1>
+
+    <header>
+
+        <h1>Weekend 1 Salary Calculator</h1>
+
+        <h3>Monthly Total: </h3>
+        <h2>0</h2>
+
+    </header>
 
     <div id='formSelector'>
         <form>
@@ -18,7 +27,29 @@
             <br>
             Last name:<br>
             <input type="text" placeholder="Bob" class="lastName">
+            <br>
+            Employee ID:<br>
+            <input type="text" placeholder="1234" class="employeeID">
+            <br>
+            Job title:<br>
+            <input type="text" placeholder="Supervisor" class="jobTitle">
+            <br>
+            Annual salary:<br>
+            <input type="text" placeholder="50000" class="annualSalary">
         </form>
+        <button type="button">Submit Form</button>
+    </div>
+    <br>
+    <div id='table'>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Employee ID</th>
+                <th>Job title</th>
+                <th>Annual salary</th>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
