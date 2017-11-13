@@ -30,7 +30,7 @@ function removeEmployee() {
     console.log(`${parseInt($(this).closest('td.sal').val())}`);
     
 
-    $('h2').replaceWith(`<h2>${(sum -= $(this).closest('.sal').val()) / 12} </h2>`);
+    $('h2').replaceWith(`<h2>${(sum -= ($(this).closest($('.sal')).val()) / 12)} </h2>`);
     //removes salary from removed employee
 }
 
